@@ -7,10 +7,9 @@ export default function Hero() {
 
   return (
     <section id="home" className="hero">
-      <div className="hero__plate" aria-hidden="true" />
       <div className="hero__inner">
         <p className="hero__eyebrow hero-anim hero-anim--1">
-          Ayan Chakraborty &middot; Sudeshna Basu Roy 
+          Criminal &middot; Matrimonial &middot; Property &middot; Corporate Law
         </p>
 
         <h1 className="hero__title">
@@ -35,18 +34,9 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero__seal" aria-hidden="true">
-        <img src="/images/logo.png" alt="" className="hero__seal-img" />
-      </div>
+      
 
-      {/* <button
-        className="scroll-cue"
-        onClick={() => scrollTo("about")}
-        aria-label="Scroll to About section"
-      >
-        <span className="scroll-cue__line" />
-        Scroll
-      </button> */}
+      
     </section>
   );
 }

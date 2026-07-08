@@ -24,10 +24,14 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--parchment);
   color: var(--text-dark);
   font-family: var(--font-body);
@@ -247,18 +251,22 @@ a { color: inherit; }
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: radial-gradient(120% 100% at 15% 0%, #1b2e21 0%, var(--ink) 55%, var(--ink) 100%);
+  background-color: #000;
   overflow: hidden;
   padding: 8rem 1.5rem 6rem;
 }
-.hero__plate {
+.hero::before {
+  content: "";
   position: absolute;
   inset: 0;
-  background-image:
-    repeating-linear-gradient(90deg, rgba(176,141,87,0.045) 0 1px, transparent 1px 120px),
-    repeating-linear-gradient(0deg, rgba(176,141,87,0.045) 0 1px, transparent 1px 120px);
-  pointer-events: none;
+  z-index: 1;
+  background-image: url("/images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
 }
+
 .hero__inner {
   max-width: var(--container);
   margin: 0 auto;
@@ -307,28 +315,7 @@ a { color: inherit; }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Signature element: the wax seal that stamps in on load */
-.hero__seal {
-  position: absolute;
-  right: 6%;
-  top: 50%;
-  width: min(38vw, 420px);
-  transform: translateY(-50%) scale(2.4);
-  opacity: 0;
-  animation: sealStamp 0.7s cubic-bezier(0.2, 0.9, 0.3, 1.1) forwards;
-  animation-delay: 0.9s;
-  z-index: 1;
-}
-@keyframes sealStamp {
-  0% { opacity: 0; transform: translateY(-50%) scale(2.4); }
-  60% { opacity: 1; transform: translateY(-50%) scale(0.94); }
-  100% { opacity: 1; transform: translateY(-50%) scale(1); }
-}
-.hero__seal-img {
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4));
-}
+
 .seal-ring-outer { fill: none; stroke: var(--maroon); stroke-width: 2.5; opacity: 0.9; }
 .seal-ring-inner { fill: none; stroke: var(--brass); stroke-width: 1.2; }
 .seal-text-main {
@@ -344,49 +331,6 @@ a { color: inherit; }
   fill: var(--maroon);
 }
 
-/* .scroll-cue {
-  position: absolute;
-  bottom: 2.4rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--brass-light);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  z-index: 2;
-  opacity: 0;
-  animation: heroRise 0.9s var(--ease) forwards;
-  animation-delay: 1.2s;
-}
-.scroll-cue__line {
-  width: 1px;
-  height: 32px;
-  background: var(--brass);
-  position: relative;
-  overflow: hidden;
-}
-.scroll-cue__line::after {
-  content: "";
-  position: absolute;
-  top: -100%; left: 0;
-  width: 100%; height: 100%;
-  background: var(--brass-light);
-  animation: cueDrop 1.8s ease-in-out infinite;
-} */
-/* @keyframes cueDrop {
-  0% { top: -100%; }
-  60% { top: 100%; }
-  100% { top: 100%; }
-} */
-
-@media (max-width: 700px) {
-  .hero__seal { display: none; }
-}
 
 /* ============================================================
    Scroll reveal
