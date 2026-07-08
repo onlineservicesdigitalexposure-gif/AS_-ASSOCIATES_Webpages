@@ -260,7 +260,7 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-image: url("/images/hero-bg.jpg");
+  background-image: url("/images/hero-bg.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
