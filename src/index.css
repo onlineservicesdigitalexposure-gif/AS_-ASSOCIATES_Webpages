@@ -109,6 +109,9 @@ a { color: inherit; }
   border-radius: var(--radius);
   transition: transform 0.25s var(--ease), background 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease);
   white-space: nowrap;
+  will-change: transform;
+  backface-visibility: hidden;
+  background-clip: padding-box;
 }
 .btn--primary {
   background: var(--maroon);
@@ -266,7 +269,11 @@ a { color: inherit; }
   background-size: cover;
   opacity: 0.5;
 }
-
+@media (max-width: 768px) {
+  .hero::before {
+    background-position: 10% center;
+  }
+}
 .hero__inner {
   max-width: var(--container);
   margin: 0 auto;
