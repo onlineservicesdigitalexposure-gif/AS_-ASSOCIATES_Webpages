@@ -90,4 +90,10 @@ export const services = [
     description:
       "Drafting and notarisation of affidavits for court proceedings, government departments and personal declarations.",
   },
+  {
+  code: "16",
+  title: "Cheque Bounce",
+  description:
+    "Representation in matters under the Negotiable Instruments Act, including cheque dishonour cases, legal notices, complaints under Section 138, trial proceedings and appeals.",
+},
 ];

@@ -5,17 +5,17 @@ export default function About() {
   return (
     <section id="about" className="section section--about">
       <div className="section__inner about__grid">
-        <ScrollReveal as="div" className="about__mark">
-          <span className="section-label">01 — About the Firm</span>
-        </ScrollReveal>
-
         <div className="about__content">
+          <ScrollReveal as="div" className="about__mark">
+            <span className="section-label">01 — About the Firm</span>
+          </ScrollReveal>
+
           <ScrollReveal as="h2" className="section-title">
             A chamber built on discretion and diligence.
           </ScrollReveal>
 
           <ScrollReveal as="p" delay={80} className="about__para">
-            {siteInfo.firmName} is led by Advocates Ayan Chakraborty and Sudeshna Basu Roy, practising
+            {siteInfo.firmName} is led by Advocate {siteInfo.advocateName}, practising
             from Chowringhee in the heart of Kolkata's old court quarter — a
             short walk from the Calcutta High Court and the offices of the
             Registrar. The chamber takes on criminal defence, matrimonial and
@@ -47,6 +47,10 @@ export default function About() {
             </div>
           </ScrollReveal>
         </div>
+
+        <ScrollReveal as="div" delay={120} className="about__image">
+          <img src="/images/gallery/details.jpeg" alt="AS Associates — firm details and contact card" />
+        </ScrollReveal>
       </div>
     </section>
   );

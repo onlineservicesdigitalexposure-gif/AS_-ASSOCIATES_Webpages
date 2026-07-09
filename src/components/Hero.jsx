@@ -7,6 +7,11 @@ export default function Hero() {
 
   return (
     <section id="home" className="hero">
+      <div className="hero__carousel" aria-hidden="true">
+        <div className="hero__slide hero__slide--1" />
+        <div className="hero__slide hero__slide--2" />
+      </div>
+      <div className="hero__overlay" aria-hidden="true" />
       <div className="hero__inner">
         <p className="hero__eyebrow hero-anim hero-anim--1">
           Criminal &middot; Matrimonial &middot; Property &middot; Corporate Law

@@ -10,7 +10,7 @@ export default function Services() {
           02 — Practice Areas
         </ScrollReveal>
         <ScrollReveal as="h2" delay={60} className="section-title section-title--center">
-          The Docket
+          Our Services
         </ScrollReveal>
         <ScrollReveal
           as="p"

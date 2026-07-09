@@ -20,7 +20,7 @@ export default function Footer() {
           <img src="/images/favicon.png" alt="AS Associates" className="brand__mark brand__mark--footer" />
           <div>
             <p className="site-footer__firm">{siteInfo.firmName}</p>
-            <p className="site-footer__advocate">Trusted legal counsel for individuals and businesses across Calcutta.</p>
+            <p className="site-footer__advocate">Trusted legal counsel for individuals and businesses across Calcutta. Providing strategic legal advice, effective representation, and personalized solutions across civil, corporate, criminal, property, and family law. We are committed to protecting your rights with integrity, professionalism, and results-driven advocacy.</p>
           </div>
         </div>
 
