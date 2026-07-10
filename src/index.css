@@ -117,14 +117,14 @@ a { color: inherit; }
   background: var(--maroon);
   color: var(--parchment);
 }
-.btn--primary:hover { background: #8f2c2e; transform: translateY(-2px); }
+.btn--primary:hover { background: #8f2c2e;}
 
 .btn--ghost {
   background: transparent;
   color: var(--parchment);
   border: 1px solid var(--brass);
 }
-.btn--ghost:hover { background: rgba(176, 141, 87, 0.15); transform: translateY(-2px); }
+.btn--ghost:hover { background: rgba(176, 141, 87, 0.15);}
 
 .btn--small { padding: 0.55rem 1.1rem; font-size: 0.85rem; }
 
@@ -474,6 +474,13 @@ a { color: inherit; }
   background: #1d2e23;
   border-color: var(--brass);
   box-shadow: 0 16px 32px -18px rgba(0, 0, 0, 0.55);
+}
+.magnetic.btn {
+  transition:
+    transform var(--magnetic-duration, 0.25s) var(--magnetic-ease, var(--ease)),
+    background 0.25s var(--ease),
+    color 0.25s var(--ease),
+    border-color 0.25s var(--ease);
 }
 .docket__code {
   font-family: var(--font-mono);
