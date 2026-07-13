@@ -15,13 +15,8 @@ export default function About() {
           </ScrollReveal>
 
           <ScrollReveal as="p" delay={80} className="about__para">
-            {siteInfo.firmName} is led by Advocate {siteInfo.advocateName}, practising
-            from Chowringhee in the heart of Kolkata's old court quarter — a
-            short walk from the Calcutta High Court and the offices of the
-            Registrar. The chamber takes on criminal defence, matrimonial and
-            family matters, property due-diligence, and company and tribunal
-            work, offering clients the same close attention whether the matter
-            is a single affidavit or a multi-year litigation.
+            AS Associates is led by Advocate <strong>Ayan Chakraborty</strong>, with <strong>over 24 years of legal experience</strong>, and Advocate <strong>Sudeshna Basu Roy</strong>, who brings <strong>more than 22 years of experience</strong> to the practice. Operating from Chowringhee in the heart of Kolkata's historic legal district, just a short walk from the Calcutta High Court and the offices of the Registrar, the chamber provides trusted legal representation across criminal defence, matrimonial and family disputes, property due diligence, company law, and tribunal matters. With decades of combined experience, the firm is committed to delivering meticulous legal counsel and personalized attention, whether handling a single affidavit or representing clients through complex, multi-year litigation.
+
           </ScrollReveal>
 
           <ScrollReveal as="p" delay={160} className="about__para">
@@ -38,13 +33,17 @@ export default function About() {
               <span className="about__stat-label">practice areas covered</span>
             </div>
             <div className="about__stat">
-              <span className="about__stat-num">1</span>
-              <span className="about__stat-label">chamber, direct access</span>
+              <span className="about__stat-num">20+</span>
+              <span className="about__stat-label">years of experience</span>
             </div>
             <div className="about__stat">
               <span className="about__stat-num">6</span>
               <span className="about__stat-label">days a week available</span>
             </div>
+            {/* <div className="about__stat">
+              <span className="about__stat-num">8</span>
+              <span className="about__stat-label">hours a day available</span>
+            </div> */}
           </ScrollReveal>
         </div>
 

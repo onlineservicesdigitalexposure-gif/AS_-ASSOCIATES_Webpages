@@ -6,7 +6,7 @@ import Gallery from "./components/Gallery.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import FloatingCallButton from "./components/FloatingCallButton.jsx";
-
+import FloatingWhatsAppButton from "./components/FloatingWhatsAppButton.jsx";
 
 export default function App() {
   return (
@@ -20,6 +20,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <FloatingWhatsAppButton />
       <FloatingCallButton />
     </>
   );
