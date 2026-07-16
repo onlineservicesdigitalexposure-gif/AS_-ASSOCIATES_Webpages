@@ -76,9 +76,9 @@ export default function Header() {
           </ul>
         </nav>
 
-        <a className="btn btn--ghost btn--small nav-cta" href={`tel:${siteInfo.phoneRaw}`} style={{ borderRadius: "8px" }}>
+        {/* <a className="btn btn--ghost btn--small nav-cta" href={`tel:${siteInfo.phoneRaw}`} style={{ borderRadius: "8px" }}>
           Call Now
-        </a>
+        </a> */}
 
         <button
           className={`menu-toggle ${menuOpen ? "menu-toggle--open" : ""}`}

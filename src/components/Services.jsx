@@ -2,6 +2,19 @@ import ScrollReveal from "./ScrollReveal.jsx";
 import Magnetic from "./Magnetic.jsx";
 import { services } from "../data/services.js";
 
+function renderWithBold(text) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") ? (
+      <strong key={i} className="docket__emphasis font-bold">
+        {part.slice(2, -2)}
+      </strong>
+    ) : (
+      part
+    )
+  );
+}
+
 export default function Services() {
   return (
     <section id="services" className="section section--services">
@@ -33,7 +46,7 @@ export default function Services() {
                 <span className="docket__code">{service.code}</span>
                 <div className="docket__body">
                   <h3 className="docket__title">{service.title}</h3>
-                  <p className="docket__desc">{service.description}</p>
+                  <p className="docket__desc">{renderWithBold(service.description)}</p>
                 </div>
               </Magnetic>
             </ScrollReveal>

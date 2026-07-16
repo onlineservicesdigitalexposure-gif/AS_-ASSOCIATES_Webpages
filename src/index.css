@@ -500,7 +500,10 @@ a { color: inherit; }
   font-size: 0.92rem;
   opacity: 0.85;
 }
-
+.docket__emphasis {
+  font-weight: 1000;
+  color: var(--brass);
+}
 @media (max-width: 760px) {
   .docket { grid-template-columns: 1fr; }
 }
