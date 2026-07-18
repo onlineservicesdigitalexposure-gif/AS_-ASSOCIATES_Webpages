@@ -13,6 +13,6 @@ export const siteInfo = {
   mapQuery: "1 Abdul Hamid Street, Chowringhee, North Esplanade, Kolkata, West Bengal 700069",
   phoneDisplay: "+91 87777 09162",
   phoneRaw: "+918777709162",
-  email: "ayan.chakraborty92@gmail.com",
+  email: "asassociateslegal711@gmail.com",
   officeHours: "Monday – Saturday, 10:30 AM – 6:30 PM",
 };
