@@ -33,7 +33,7 @@ export default function About() {
               <span className="about__stat-label">practice areas covered</span>
             </div>
             <div className="about__stat">
-              <span className="about__stat-num">20+</span>
+              <span className="about__stat-num">25+</span>
               <span className="about__stat-label">years of experience</span>
             </div>
             <div className="about__stat">

@@ -43,57 +43,57 @@ export const services = [
       "**Contested and mutual-consent divorce proceedings** handled with discretion before Family Court.",
   },
   {
-    code: "08",
-    title: "Land Registration",
-    description:
-      "**Drafting, vetting and registration of sale deeds, gift deeds** and other instruments of immovable property.",
+      code: "08",
+      title: "Land Registration & Searching",
+      description:
+        "**Drafting, vetting and registration of sale deeds, gift deeds and other instruments of immovable property**, along with **title verification, encumbrance searches and due diligence** to ensure a clear and marketable title.",
   },
   {
     code: "09",
-    title: "Land Searching",
-    description:
-      "**Title verification and encumbrance searches** at the Registration Office to confirm clear and marketable title.",
-  },
-  {
-    code: "10",
     title: "NCLT",
     description:
       "Representation before **the National Company Law Tribunal** in matters of **insolvency, restructuring and company disputes**.",
   },
   {
-    code: "11",
+    code: "10",
     title: "DRT",
     description:
-      "**Recovery proceedings and defence** before the Debts Recovery Tribunal in **banking and financial disputes**.",
+      "Representation in **Debts Recovery Tribunal (DRT) matters**, including **recovery proceedings, defence in banking and financial disputes, money suits, title suits and other civil litigation**.",
   },
   {
-    code: "12",
-    title: "DRAT",
-    description:
-      "Appeals against **Debts Recovery Tribunal orders** before the **Debts Recovery Appellate Tribunal**.",
-  },
-  {
-    code: "13",
+    code: "11",
     title: "Copyright",
     description:
       "Registration and enforcement of **copyright**, and advisory on **intellectual-property protection** for creative work.",
   },
   {
-    code: "14",
+    code: "12",
     title: "Company Registration",
     description:
       "**Incorporation of private companies, LLPs and partnership firms**, along with the associated statutory compliances.",
   },
   {
-    code: "15",
+    code: "13",
     title: "Affidavit",
     description:
       "**Drafting and notarisation of affidavits** for court proceedings, government departments and personal declarations.",
   },
   {
-    code: "16",
+    code: "14",
     title: "NDPS",
     description:
       "Matters under the **Narcotic Drugs and Psychotropic Substances** Act, including **bail, quashing petitions and trial defence**.",
-},
+  },
+  {
+    code: "15",
+    title: "Money Suit & Title Suit",
+    description:
+      "Representation in **money suits, title suits, declaration suits, partition suits, possession and other civil litigation** before competent courts.",
+  },
+  {
+    code: "16",
+    title: "Money Laundering (SEBI & ED)",
+    description:
+      "Representation in **money laundering matters**, including proceedings before the **Enforcement Directorate (ED)** and **SEBI**, involving investigations, adjudication and financial regulatory disputes.",
+  },
 ];
