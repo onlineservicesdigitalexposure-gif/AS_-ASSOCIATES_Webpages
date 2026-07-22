@@ -547,7 +547,23 @@ a { color: inherit; }
   font-size: 0.78rem;
   letter-spacing: 0.03em;
 }
-
+.gallery-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.gallery-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.gallery-more .btn--ghost {
+  color: var(--maroon);
+  border-color: var(--maroon);
+}
+.gallery-more .btn--ghost:hover {
+  background: rgba(122, 36, 38, 0.08);
+}
 @media (max-width: 760px) {
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }

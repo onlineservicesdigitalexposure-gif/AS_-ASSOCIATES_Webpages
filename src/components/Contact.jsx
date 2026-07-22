@@ -15,7 +15,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nPhone: ${form.phone}\n\nMessage:\n${form.message}`
     );
-    window.location.href = `mailto:${siteInfo.email}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${siteInfo.emails[0]}?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
@@ -77,7 +77,7 @@ export default function Contact() {
                   </a>
                 </li>
                 <li className="contact-details__row">
-                  <a href={`mailto:${siteInfo.email}`} className="contact-details__item contact-details__item--link">
+                  <div className="contact-details__item">
                     <span className="contact-details__icon" aria-hidden="true">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                         <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -86,9 +86,15 @@ export default function Contact() {
                     </span>
                     <span className="contact-details__content">
                       <span className="contact-details__label">Email</span>
-                      <span className="contact-details__value">{siteInfo.email}</span>
+                      <span className="contact-details__value contact-details__value--stack">
+                        {siteInfo.emails.map((email) => (
+                          <a key={email} href={`mailto:${email}`} className="contact-details__email-link">
+                            {email}
+                          </a>
+                        ))}
+                      </span>
                     </span>
-                  </a>
+                  </div>
                 </li>
                 <li className="contact-details__row">
                   <div className="contact-details__item">
@@ -131,10 +137,6 @@ export default function Contact() {
             <button type="submit" className="btn btn--primary">
               {sent ? "Opening your mail app…" : "Send Enquiry"}
             </button>
-              <p className="contact-form__note">
-                Submitting opens your email app with these details pre-filled to{" "}
-                {siteInfo.email}.
-              </p>
           </ScrollReveal>
         </div>
 

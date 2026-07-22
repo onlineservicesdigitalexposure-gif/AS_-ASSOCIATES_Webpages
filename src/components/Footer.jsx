@@ -37,7 +37,9 @@ export default function Footer() {
             <span key={line}>{line}</span>
           ))}
           <a href={`tel:${siteInfo.phoneRaw}`}>{siteInfo.phoneDisplay}</a>
-          <a href={`mailto:${siteInfo.email}`}>{siteInfo.email}</a>
+          {siteInfo.emails.map((email) => (
+            <a key={email} href={`mailto:${email}`}>{email}</a>
+          ))}
         </address>
       </div>
 
