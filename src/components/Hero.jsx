@@ -18,8 +18,8 @@ export default function Hero() {
         </p>
 
         <h1 className="hero__title">
-          <span className="hero-anim hero-anim--2">Judicious counsel,</span>
-          <span className="hero-anim hero-anim--3">rooted in old Calcutta.</span>
+          <span className="hero-anim hero-anim--2">Trusted Legal Excellence,</span>
+          <span className="hero-anim hero-anim--3">Rooted in Calcutta.</span>
         </h1>
 
         <p className="hero__lede hero-anim hero-anim--4">
