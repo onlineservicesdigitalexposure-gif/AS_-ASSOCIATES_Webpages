@@ -96,4 +96,16 @@ export const services = [
     description:
       "Representation in **money laundering matters**, including proceedings before the **Enforcement Directorate (ED)** and **SEBI**, involving investigations, adjudication and financial regulatory disputes.",
   },
+  {
+    code: "17",
+    title: "Additional Senior Public Prosecutor for State of West Bengal",
+    description:
+      "Representation and legal counsel as **Additional Senior Public Prosecutor for the State of West Bengal**, handling **major state prosecutions, criminal trials, appeals, and constitutional proceedings** before competent courts.",
+  },
+  {
+    code: "18",
+    title: "Special Counsel for Central Bureau of Investigation, (CBI) Kolkata",
+    description:
+      "Representation and advisory as **Special Counsel for the Central Bureau of Investigation (CBI), Kolkata**, handling **complex federal investigations, anti-corruption cases, financial offenses, and trial/appellate litigation**.",
+  },
 ];

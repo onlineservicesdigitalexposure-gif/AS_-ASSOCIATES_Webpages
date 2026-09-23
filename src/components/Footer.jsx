@@ -44,8 +44,8 @@ export default function Footer() {
       </div>
 
       <div className="site-footer__bar">
-        <span>&copy; {year} {siteInfo.firmName}. All rights reserved.</span>
-        <span>
+        <span>&copy; {year} {siteInfo.firmName}.
+
           Design and developed by{" "}
           
           <a  href="https://www.teamdeoskolkata.in/"
@@ -54,7 +54,7 @@ export default function Footer() {
             className="site-footer__credit-link"
           >
             Digital Exposure Online Services
-          </a>
+            </a>
         </span>
       </div>
     </footer>

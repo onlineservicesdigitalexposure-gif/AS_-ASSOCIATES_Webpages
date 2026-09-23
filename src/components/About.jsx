@@ -29,7 +29,7 @@ export default function About() {
 
           <ScrollReveal as="div" delay={240} className="about__stats">
             <div className="about__stat">
-              <span className="about__stat-num">15+</span>
+              <span className="about__stat-num">18+</span>
               <span className="about__stat-label">practice areas covered</span>
             </div>
             <div className="about__stat">
