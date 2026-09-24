@@ -20,7 +20,9 @@ export default function Footer() {
           <img src="/images/favicon.png" alt="AS Associates" className="brand__mark brand__mark--footer" />
           <div>
             <p className="site-footer__firm">{siteInfo.firmName}</p>
-            <p className="site-footer__advocate">Trusted legal counsel for individuals and businesses across Calcutta. Providing strategic legal advice, effective representation, and personalized solutions across civil, corporate, criminal, property, and family law. We are committed to protecting your rights with integrity, professionalism, and results-driven advocacy.</p>
+            <p className="site-footer__advocate">
+              Led by <strong>Advocate Ayan Chakraborty</strong> (Additional Senior Public Prosecutor for State of West Bengal &amp; Special Counsel for CBI Kolkata) and <strong>Advocate Sudeshna Basu Roy</strong>. Trusted legal counsel providing strategic legal advice, effective representation, and personalized solutions across civil, corporate, criminal, property, and family law.
+            </p>
           </div>
         </div>
 
@@ -44,17 +46,14 @@ export default function Footer() {
       </div>
 
       <div className="site-footer__bar">
-        <span>&copy; {year} {siteInfo.firmName}.
-
-          Design and developed by{" "}
-          
-          <a  href="https://www.teamdeoskolkata.in/"
+        <span>&copy; {year} {siteInfo.firmName}. Design and developed by{" "}
+          <a href="https://www.teamdeoskolkata.in/"
             target="_blank"
             rel="noopener noreferrer"
             className="site-footer__credit-link"
           >
             Digital Exposure Online Services
-            </a>
+          </a>
         </span>
       </div>
     </footer>

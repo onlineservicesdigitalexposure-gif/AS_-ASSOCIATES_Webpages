@@ -20,7 +20,7 @@ export default function Services() {
     <section id="services" className="section section--services">
       <div className="section__inner">
         <ScrollReveal as="p" className="section-label section-label--center">
-          02 — Practice Areas
+          02 — Practice Areas & Special Appointments
         </ScrollReveal>
         <ScrollReveal as="h2" delay={60} className="section-title section-title--center">
           Our Services
@@ -40,10 +40,15 @@ export default function Services() {
               as="li"
               key={service.code}
               delay={(i % 4) * 70}
-              className="docket__cell"
+              className={`docket__cell ${service.highlighted ? "docket__cell--highlighted" : ""}`}
             >
-              <Magnetic as="div" strength={0.25} className="docket__item">
-                <span className="docket__code">{service.code}</span>
+              <Magnetic as="div" strength={0.25} className={`docket__item ${service.highlighted ? "docket__item--highlighted" : ""}`}>
+                <div className="docket__header">
+                  <span className="docket__code">{service.code}</span>
+                  {service.badge && (
+                    <span className="docket__badge">{service.badge}</span>
+                  )}
+                </div>
                 <div className="docket__body">
                   <h3 className="docket__title">{service.title}</h3>
                   <p className="docket__desc">{renderWithBold(service.description)}</p>

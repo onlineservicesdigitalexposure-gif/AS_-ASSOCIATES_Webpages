@@ -22,8 +22,20 @@ export default function Hero() {
           <span className="hero-anim hero-anim--3">Rooted in Calcutta.</span>
         </h1>
 
+        <div className="hero__designations hero-anim hero-anim--4">
+          <div className="hero__designation-header">Advocate Ayan Chakraborty</div>
+          <div className="hero__designation-badges">
+            <span className="hero__badge">
+              Additional Senior Public Prosecutor (State of WB)
+            </span>
+            <span className="hero__badge">
+              Special Counsel for CBI, Kolkata
+            </span>
+          </div>
+        </div>
+
         <p className="hero__lede hero-anim hero-anim--4">
-          {siteInfo.firmName} is the practice of Advocate Ayan Chakraborty and Advocate Sudeshna Basu Roy, located a few
+          {siteInfo.firmName} is the practice of Advocate <strong>Ayan Chakraborty</strong> and Advocate <strong>Sudeshna Basu Roy</strong>, located a few
           steps from the Great Eastern Hotel, handling criminal, matrimonial,
           property and corporate matters before the Calcutta High Court and
           subordinate courts.
@@ -38,10 +50,6 @@ export default function Hero() {
           </Magnetic>
         </div>
       </div>
-
-      
-
-      
     </section>
   );
 }

@@ -2,6 +2,10 @@
 export const siteInfo = {
   firmName: "AS Associates",
   advocateName: "Ayan Chakraborty, Sudeshna Basu Roy",
+  ayanDesignations: [
+    "Additional Senior Public Prosecutor for State of West Bengal",
+    "Special Counsel for Central Bureau of Investigation (CBI), Kolkata",
+  ],
   tagline: "Advocate, Calcutta High Court & Subordinate Courts",
   addressLines: [
     "1 Abdul Hamid Street",
@@ -13,8 +17,9 @@ export const siteInfo = {
   mapQuery: "1 Abdul Hamid Street, Chowringhee, North Esplanade, Kolkata, West Bengal 700069",
   phoneDisplay: "+91 87777 09162",
   phoneRaw: "+918777709162",
-  emails:[ "asassociateslegal711@gmail.com",
-          "ayan.chakraborty92@gmail.com",
-    ],
+  emails: [
+    "asassociateslegal711@gmail.com",
+    "ayan.chakraborty92@gmail.com",
+  ],
   officeHours: "Monday – Saturday, 10:30 AM – 6:30 PM",
 };
